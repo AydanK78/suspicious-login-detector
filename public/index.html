@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspicious Login Detector - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.30.0/index.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🛡️ Suspicious Login Detector</h1>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Status:</span>
+                        <span class="status-indicator" id="statusIndicator">🟢 Online</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Last Update:</span>
+                        <span id="lastUpdate">--</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Stats Cards -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-content">
+                        <h3>Total Users</h3>
+                        <div class="stat-value" id="totalUsers">--</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔐</div>
+                    <div class="stat-content">
+                        <h3>Total Logins</h3>
+                        <div class="stat-value" id="totalLogins">--</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚠️</div>
+                    <div class="stat-content">
+                        <h3>Suspicious Logins</h3>
+                        <div class="stat-value" id="suspiciousLogins">--</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-content">
+                        <h3>Risk Rate</h3>
+                        <div class="stat-value" id="riskRate">--%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="charts-section">
+                <div class="chart-container">
+                    <h3>Risk Level Distribution</h3>
+                    <canvas id="riskChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Login Activity (Last 24 Hours)</h3>
+                    <canvas id="activityChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="recent-activity">
+                <h3>Recent High-Risk Activities</h3>
+                <div class="activity-list" id="recentActivity">
+                    <div class="loading">Loading recent activities...</div>
+                </div>
+            </section>
+
+            <!-- Live Login Feed -->
+            <section class="live-feed">
+                <h3>Live Login Feed</h3>
+                <div class="feed-controls">
+                    <button id="toggleFeed" class="btn btn-primary">Start Live Feed</button>
+                    <button id="clearFeed" class="btn btn-secondary">Clear</button>
+                </div>
+                <div class="login-feed" id="loginFeed">
+                    <div class="feed-placeholder">Click "Start Live Feed" to begin monitoring</div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h4>Quick Actions</h4>
+                <button class="btn btn-outline" onclick="refreshDashboard()">🔄 Refresh Data</button>
+                <button class="btn btn-outline" onclick="exportData()">📥 Export Report</button>
+                <button class="btn btn-outline" onclick="openSettings()">⚙️ Settings</button>
+            </div>
+
+            <div class="sidebar-section">
+                <h4>System Health</h4>
+                <div class="health-item">
+                    <span>Database:</span>
+                    <span class="health-status" id="dbStatus">🟢 Connected</span>
+                </div>
+                <div class="health-item">
+                    <span>API:</span>
+                    <span class="health-status" id="apiStatus">🟢 Online</span>
+                </div>
+                <div class="health-item">
+                    <span>WebSocket:</span>
+                    <span class="health-status" id="wsStatus">🔴 Disconnected</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h4>Risk Thresholds</h4>
+                <div class="threshold-item">
+                    <span>Low:</span>
+                    <span class="threshold-value">0-29</span>
+                </div>
+                <div class="threshold-item">
+                    <span>Medium:</span>
+                    <span class="threshold-value">30-49</span>
+                </div>
+                <div class="threshold-item">
+                    <span>High:</span>
+                    <span class="threshold-value">50-69</span>
+                </div>
+                <div class="threshold-item">
+                    <span>Critical:</span>
+                    <span class="threshold-value">70-100</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h3>Test Login Detection</h3>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="testUserId">User ID:</label>
+                    <input type="text" id="testUserId" value="test_user" required>
+                </div>
+                <div class="form-group">
+                    <label for="testIpAddress">IP Address:</label>
+                    <input type="text" id="testIpAddress" value="8.8.8.8" required>
+                </div>
+                <div class="form-group">
+                    <label for="testSuccess">Success:</label>
+                    <select id="testSuccess">
+                        <option value="true">Successful Login</option>
+                        <option value="false">Failed Login</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Test Login</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

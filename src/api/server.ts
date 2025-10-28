@@ -1,17 +1,35 @@
 import express, { Request, Response } from 'express';
+import { createServer } from 'http';
+import { Server as SocketIOServer } from 'socket.io';
+import path from 'path';
 import { SuspiciousLoginDetector } from '../core/detector';
 import { LoginAttempt, DetectorConfig } from '../types';
 import { getDatabase } from '../database/database';
 
 const app = express();
+const server = createServer(app);
+const io = new SocketIOServer(server, {
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"]
+  }
+});
 const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '../../public')));
 
 // Initialize detector and database
 const detector = new SuspiciousLoginDetector();
 const db = getDatabase();
+
+/**
+ * Serve dashboard
+ */
+app.get('/', (req: Request, res: Response) => {
+  res.sendFile(path.join(__dirname, '../../public/index.html'));
+});
 
 /**
  * Health check endpoint
@@ -43,6 +61,14 @@ app.post('/api/login/check', async (req: Request, res: Response) => {
     }
 
     const assessment = await detector.analyzeLogin(loginAttempt);
+    
+    // Emit real-time update to connected clients
+    io.emit('login_analyzed', {
+      ...assessment,
+      ipAddress: loginAttempt.ipAddress,
+      success: loginAttempt.success
+    });
+    
     res.json(assessment);
   } catch (error) {
     console.error('Error analyzing login:', error);
@@ -171,16 +197,32 @@ app.get('/api/risk-assessments', async (req: Request, res: Response) => {
   }
 });
 
+// WebSocket connection handling
+io.on('connection', (socket) => {
+  console.log('Client connected:', socket.id);
+  
+  socket.on('disconnect', () => {
+    console.log('Client disconnected:', socket.id);
+  });
+  
+  // Send initial dashboard data
+  socket.emit('dashboard_data', { message: 'Connected to live updates' });
+});
+
 // Start server
 if (require.main === module) {
-  app.listen(port, () => {
+  server.listen(port, () => {
     console.log(`Suspicious Login Detector API listening on port ${port}`);
+    console.log(`Dashboard: http://localhost:${port}`);
     console.log(`Health check: http://localhost:${port}/health`);
     console.log('\nAvailable endpoints:');
+    console.log(`  GET    http://localhost:${port}/                    # Dashboard`);
     console.log(`  POST   http://localhost:${port}/api/login/check`);
     console.log(`  POST   http://localhost:${port}/api/login/batch`);
     console.log(`  GET    http://localhost:${port}/api/user/:userId/history`);
     console.log(`  GET    http://localhost:${port}/api/user/:userId/risk-profile`);
+    console.log(`  GET    http://localhost:${port}/api/stats`);
+    console.log(`  GET    http://localhost:${port}/api/risk-assessments`);
   });
 }
 
