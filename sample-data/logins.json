@@ -1,0 +1,1066 @@
+[
+  {
+    "userId": "user_003",
+    "timestamp": "2023-12-31T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_yob5ir0vz1q"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-01T00:00:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_ulnn4ce6uoc"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-01T00:30:00.000Z",
+    "ipAddress": "133.130.96.1",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_hwksza2anti"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-01T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_7negvs961ry"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-01T15:12:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_fiktqus3swa"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-01T16:58:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_367qw08o0jz"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-01T17:03:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_g2elwd3ely"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-01T19:29:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_dqfxfz84wbo"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-01T21:09:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_lxe8583ouqq"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-02T14:53:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_4gi0sw7jm7s"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-02T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_bnvfgcww378"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-02T16:47:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_kunzjufynj"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-02T18:48:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_l51oeufvj8f"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-02T21:40:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_u8wd02m6hh"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-02T22:06:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_2gcp4lp0xj"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T00:00:00.000Z",
+    "ipAddress": "106.51.0.1",
+    "success": false,
+    "userAgent": "Python/3.9",
+    "sessionId": "sess_phl62vcqvy"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T00:01:00.000Z",
+    "ipAddress": "106.51.0.1",
+    "success": false,
+    "userAgent": "Python/3.9",
+    "sessionId": "sess_8307k7wp49k"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T00:02:00.000Z",
+    "ipAddress": "106.51.0.1",
+    "success": false,
+    "userAgent": "Python/3.9",
+    "sessionId": "sess_v74t6hnbv4"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T00:03:00.000Z",
+    "ipAddress": "106.51.0.1",
+    "success": false,
+    "userAgent": "Python/3.9",
+    "sessionId": "sess_5mbe317sn7w"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T00:04:00.000Z",
+    "ipAddress": "106.51.0.1",
+    "success": false,
+    "userAgent": "Python/3.9",
+    "sessionId": "sess_4zamg7txlpx"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T00:05:00.000Z",
+    "ipAddress": "106.51.0.1",
+    "success": false,
+    "userAgent": "Python/3.9",
+    "sessionId": "sess_swotd1f247h"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T00:06:00.000Z",
+    "ipAddress": "106.51.0.1",
+    "success": false,
+    "userAgent": "Python/3.9",
+    "sessionId": "sess_76qzlfadagu"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T00:07:00.000Z",
+    "ipAddress": "106.51.0.1",
+    "success": false,
+    "userAgent": "Python/3.9",
+    "sessionId": "sess_h8qhumdukha"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T00:08:00.000Z",
+    "ipAddress": "106.51.0.1",
+    "success": false,
+    "userAgent": "Python/3.9",
+    "sessionId": "sess_j5vecuv4psm"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T00:09:00.000Z",
+    "ipAddress": "106.51.0.1",
+    "success": false,
+    "userAgent": "Python/3.9",
+    "sessionId": "sess_ck2f4t38h99"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-03T14:05:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_04o51qk3imw"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-03T14:33:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_apb162eq5i4"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-03T14:43:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_504z7ybshxh"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-03T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_54k3tpbzrfn"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-03T15:53:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_274vtzrlc9n"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-03T19:17:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_ybqdjd7lry"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-04T14:23:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_hxgy48xrpm4"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-04T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_etfhr6qmz2"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-04T16:47:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_zo8qwtm7iz"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-04T18:33:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_y32f8s1d3yd"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-04T21:24:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_9upooyvcsc4"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-04T21:45:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_c807fy04hvc"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-05T14:21:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_ya2q7mvm18p"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-05T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_6t7bx30jsql"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-05T15:10:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_e103gc486q"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-05T17:50:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_rbrv2kwo14k"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-05T18:05:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_94ebli77wzq"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-05T20:15:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_tjq0avz01fb"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-06T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_n791ib6jkfq"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-07T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_y5dmhwirdwh"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-08T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_zv8rkuy5n2"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-08T16:53:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_fpzbngnr9qv"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-08T18:41:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_xrko2xcny5d"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-08T20:15:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_izt3u7w6vh"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-08T20:59:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_otwz25b1aeb"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-08T22:48:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_9cg9am5dv7q"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-09T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_wnllzkf1qml"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-09T17:26:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_5nks7ywyyou"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-09T20:01:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_hish0fbqxw"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-09T21:21:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_5leej05l2tq"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-09T22:20:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_v799do8taxb"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-09T22:32:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_9coldvh56iu"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-10T14:10:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_jbn8sawo2k"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-10T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_oof3kl4mm5"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-10T17:42:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_kiz7haghib"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-10T18:06:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_bu64s8vhze7"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-10T20:15:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_tfo269x102"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-10T22:48:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_zibn44aoqyc"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-11T14:44:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_9kltwd330p"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-11T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_4ddviuu1li9"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-11T17:10:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_xiep5oz856"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-11T19:11:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_cuhidyask2v"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-11T19:22:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_vg4hvm401rd"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-11T22:45:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_wi4dyue0e2"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-12T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_k0l65hvoe8"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-12T15:58:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_daa1mxru5th"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-12T17:36:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_sx7fdegvfjf"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-12T19:34:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_iynws5gdx5i"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-12T19:47:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_ir3eywdsvs"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-12T19:53:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_o85vuptrqea"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-13T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_cr4gvgudqln"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-14T15:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_w5yeuru6qjc"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-15T14:45:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_1hds6mfonybh"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-15T16:33:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_xinxadlb94p"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-15T17:39:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_kvics1qx12"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-15T20:55:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_cdwst4q8vmq"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-15T21:52:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_0id7v3yr13ju"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-16T08:00:00.000Z",
+    "ipAddress": "81.2.69.142",
+    "success": true,
+    "userAgent": "Mozilla/5.0",
+    "sessionId": "sess_txtydq5shxk"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-16T19:04:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_m0jyx6sxh7n"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-16T21:13:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_fn0sorldqdm"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-16T21:16:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_e60i28xojuk"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-16T22:33:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_aoxmp5zlzx"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-16T22:47:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_p77v7w07fvk"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-17T15:35:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_aso3pvfrpkn"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-17T15:42:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_yut7vb1ki3"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-17T17:45:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_gj8w205wn4p"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-17T18:57:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_m5xt5bqguj"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-17T20:54:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_wnknb1vu9ko"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-18T17:08:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_xc6c9gwdm8"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-18T18:18:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_l0u2y88uy7d"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-18T19:01:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_vn8td1gifj"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-18T19:51:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_2yys10nvfic"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-18T21:25:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_ycu2s6is7d"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-19T15:16:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_rn8h3crabhr"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-19T17:31:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_0ocerktj22xo"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-19T17:48:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_evfr82oev6l"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-19T20:43:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_6yc06hoo8r5"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-19T22:13:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_298pq5zyx8f"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-22T16:10:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_7u8bmbrzyjs"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-22T16:41:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_o10qah4l1y"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-22T16:46:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_y0gf12uyns"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-22T17:59:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_se0xzoxlip"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-22T21:17:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_439ek9xhnoc"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-23T15:02:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_palkd144kra"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-23T16:29:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_099tzt4urqdg"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-23T16:37:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_4eb0yebrjr5"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-23T19:54:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_jr6jy1y2hko"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-23T21:51:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_wokntqp7kng"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-24T14:45:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_f6h1qsno3sb"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-24T15:04:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_tmbtgz8wi8n"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-24T17:25:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_fksn0mefrj"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-24T17:51:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_8rt3iyock5"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-24T19:10:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_8fs95nqb5ur"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-25T15:33:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_84p8katgxx"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-25T17:10:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_t003r94ik7"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-25T18:52:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_zudx9kwrma"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-25T20:41:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_pwlp5hxu44"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-25T22:16:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_if5mstjf21k"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-26T16:47:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_a9vm0jrfl09"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-26T18:17:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_zzgajtwyag"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-26T19:01:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_zdytha1t45"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-26T20:21:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_frnt2w0yk9"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-26T21:16:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_xtu9u7xibj"
+  },
+  {
+    "userId": "user_002",
+    "timestamp": "2024-01-29T14:15:00.000Z",
+    "ipAddress": "8.8.8.8",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_1lcaohtaet"
+  },
+  {
+    "userId": "user_005",
+    "timestamp": "2024-01-29T15:00:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_2ftltljv62o"
+  },
+  {
+    "userId": "user_001",
+    "timestamp": "2024-01-29T17:35:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_4k99gows9j7"
+  },
+  {
+    "userId": "user_004",
+    "timestamp": "2024-01-29T19:30:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_kmcq26xmo8"
+  },
+  {
+    "userId": "user_003",
+    "timestamp": "2024-01-29T21:06:00.000Z",
+    "ipAddress": "8.8.4.4",
+    "success": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "sessionId": "sess_1acaaq1g8nh"
+  }
+]

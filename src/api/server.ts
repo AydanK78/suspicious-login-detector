@@ -1,0 +1,175 @@
+import express, { Request, Response } from 'express';
+import { SuspiciousLoginDetector } from '../core/detector';
+import { LoginAttempt, DetectorConfig } from '../types';
+
+const app = express();
+const port = process.env.PORT || 3000;
+
+// Middleware
+app.use(express.json());
+
+// Initialize detector
+const detector = new SuspiciousLoginDetector();
+
+/**
+ * Health check endpoint
+ */
+app.get('/health', (req: Request, res: Response) => {
+  res.json({ status: 'ok', message: 'Suspicious Login Detector API is running' });
+});
+
+/**
+ * POST /api/login/check
+ * Analyze a single login attempt
+ */
+app.post('/api/login/check', async (req: Request, res: Response) => {
+  try {
+    const loginAttempt: LoginAttempt = {
+      userId: req.body.userId,
+      timestamp: new Date(req.body.timestamp || Date.now()),
+      ipAddress: req.body.ipAddress,
+      success: req.body.success ?? true,
+      userAgent: req.body.userAgent,
+      sessionId: req.body.sessionId
+    };
+
+    // Validate required fields
+    if (!loginAttempt.userId || !loginAttempt.ipAddress) {
+      return res.status(400).json({
+        error: 'Missing required fields: userId and ipAddress are required'
+      });
+    }
+
+    const assessment = await detector.analyzeLogin(loginAttempt);
+    res.json(assessment);
+  } catch (error) {
+    console.error('Error analyzing login:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+/**
+ * POST /api/login/batch
+ * Analyze multiple login attempts
+ */
+app.post('/api/login/batch', async (req: Request, res: Response) => {
+  try {
+    const attempts: LoginAttempt[] = req.body.attempts;
+
+    if (!Array.isArray(attempts)) {
+      return res.status(400).json({
+        error: 'Invalid request: attempts array is required'
+      });
+    }
+
+    // Validate and convert timestamps
+    const validatedAttempts: LoginAttempt[] = attempts.map(attempt => ({
+      userId: attempt.userId,
+      timestamp: new Date(attempt.timestamp || Date.now()),
+      ipAddress: attempt.ipAddress,
+      success: attempt.success ?? true,
+      userAgent: attempt.userAgent,
+      sessionId: attempt.sessionId
+    }));
+
+    const assessments = await detector.analyzeMultiple(validatedAttempts);
+    res.json({ results: assessments, total: assessments.length });
+  } catch (error) {
+    console.error('Error analyzing batch:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+/**
+ * GET /api/user/:userId/history
+ * Get login history for a user
+ */
+app.get('/api/user/:userId/history', (req: Request, res: Response) => {
+  try {
+    const userId = req.params.userId;
+    const profile = detector.getUserProfileData(userId);
+
+    if (!profile) {
+      return res.status(404).json({
+        error: 'User not found',
+        message: `No login history found for user: ${userId}`
+      });
+    }
+
+    res.json({
+      userId: profile.userId,
+      totalLogins: profile.loginHistory.length,
+      successfulLogins: profile.loginHistory.filter(l => l.success).length,
+      failedLogins: profile.failedAttempts.length,
+      history: profile.loginHistory,
+      lastSuccessfulLogin: profile.lastSuccessfulLogin
+    });
+  } catch (error) {
+    console.error('Error fetching history:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+/**
+ * GET /api/user/:userId/risk-profile
+ * Get risk profile summary for a user
+ */
+app.get('/api/user/:userId/risk-profile', (req: Request, res: Response) => {
+  try {
+    const userId = req.params.userId;
+    const profile = detector.getUserProfileData(userId);
+
+    if (!profile) {
+      return res.status(404).json({
+        error: 'User not found',
+        message: `No profile found for user: ${userId}`
+      });
+    }
+
+    res.json({
+      userId: profile.userId,
+      totalLogins: profile.loginHistory.length,
+      failedAttempts: profile.failedAttempts.length,
+      typicalLocations: profile.typicalLocations,
+      typicalLoginHours: profile.typicalLoginHours,
+      lastSuccessfulLogin: profile.lastSuccessfulLogin
+    });
+  } catch (error) {
+    console.error('Error fetching risk profile:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+/**
+ * GET /api/stats
+ * Get overall statistics
+ */
+app.get('/api/stats', (req: Request, res: Response) => {
+  try {
+    // This would need to be implemented with proper data storage
+    // For now, return a placeholder
+    res.json({
+      message: 'Statistics endpoint',
+      note: 'Implement data storage for comprehensive statistics'
+    });
+  } catch (error) {
+    console.error('Error fetching stats:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Start server
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Suspicious Login Detector API listening on port ${port}`);
+    console.log(`Health check: http://localhost:${port}/health`);
+    console.log('\nAvailable endpoints:');
+    console.log(`  POST   http://localhost:${port}/api/login/check`);
+    console.log(`  POST   http://localhost:${port}/api/login/batch`);
+    console.log(`  GET    http://localhost:${port}/api/user/:userId/history`);
+    console.log(`  GET    http://localhost:${port}/api/user/:userId/risk-profile`);
+  });
+}
+
+export default app;
+
