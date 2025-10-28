@@ -17,27 +17,41 @@ import {
   getFailedAttemptsInWindow
 } from '../utils/timeAnalysis';
 import { defaultConfig } from '../utils/config';
+import { getDatabase } from '../database/database';
 
 /**
  * Main suspicious login detector class
  */
 export class SuspiciousLoginDetector {
   private config: DetectorConfig;
-  private userProfiles: Map<string, UserProfile>;
+  private db: ReturnType<typeof getDatabase>;
 
   constructor(config?: Partial<DetectorConfig>) {
     this.config = config
       ? { ...defaultConfig, ...config }
       : defaultConfig;
-    this.userProfiles = new Map();
+    this.db = getDatabase();
   }
 
   /**
    * Analyze a single login attempt
    */
   async analyzeLogin(attempt: LoginAttempt): Promise<RiskAssessment> {
-    const profile = this.getUserProfile(attempt.userId);
+    // Save login attempt to database
+    await this.db.saveLoginAttempt(attempt);
     
+    // Get or create user profile
+    let profile = await this.db.getUserProfile(attempt.userId);
+    if (!profile) {
+      profile = {
+        userId: attempt.userId,
+        loginHistory: [],
+        typicalLocations: [],
+        typicalLoginHours: [],
+        failedAttempts: []
+      };
+    }
+
     // Update profile with current attempt
     profile.loginHistory.push(attempt);
     if (!attempt.success) {
@@ -59,7 +73,7 @@ export class SuspiciousLoginDetector {
     const recommendations = this.generateRecommendations(factors, riskLevel);
     const details = this.generateDetails(attempt, profile, factors);
 
-    return {
+    const assessment: RiskAssessment = {
       userId: attempt.userId,
       timestamp: attempt.timestamp,
       overallRisk,
@@ -68,6 +82,14 @@ export class SuspiciousLoginDetector {
       recommendations,
       details
     };
+
+    // Save risk assessment to database
+    await this.db.saveRiskAssessment(assessment);
+    
+    // Save updated profile to database
+    await this.db.saveUserProfile(profile);
+
+    return assessment;
   }
 
   /**
@@ -85,19 +107,10 @@ export class SuspiciousLoginDetector {
   }
 
   /**
-   * Get or create user profile
+   * Get user profile from database
    */
-  private getUserProfile(userId: string): UserProfile {
-    if (!this.userProfiles.has(userId)) {
-      this.userProfiles.set(userId, {
-        userId,
-        loginHistory: [],
-        typicalLocations: [],
-        typicalLoginHours: [],
-        failedAttempts: []
-      });
-    }
-    return this.userProfiles.get(userId)!;
+  async getUserProfile(userId: string): Promise<UserProfile | null> {
+    return await this.db.getUserProfile(userId);
   }
 
   /**
@@ -378,36 +391,24 @@ export class SuspiciousLoginDetector {
   }
 
   /**
-   * Get user profile
+   * Get user profile data from database
    */
-  getUserProfileData(userId: string): UserProfile | undefined {
-    return this.userProfiles.get(userId);
+  async getUserProfileData(userId: string): Promise<UserProfile | null> {
+    return await this.db.getUserProfile(userId);
   }
 
   /**
-   * Load user profiles (for persistence)
+   * Get dashboard statistics
    */
-  loadProfiles(profiles: UserProfile[]): void {
-    profiles.forEach(profile => {
-      // Convert timestamp strings to Date objects if needed
-      profile.loginHistory = profile.loginHistory.map(attempt => ({
-        ...attempt,
-        timestamp: new Date(attempt.timestamp)
-      }));
-      
-      if (profile.lastSuccessfulLogin) {
-        profile.lastSuccessfulLogin.timestamp = new Date(
-          profile.lastSuccessfulLogin.timestamp
-        );
-      }
-      
-      profile.failedAttempts = profile.failedAttempts.map(attempt => ({
-        ...attempt,
-        timestamp: new Date(attempt.timestamp)
-      }));
-      
-      this.userProfiles.set(profile.userId, profile);
-    });
+  async getDashboardStats(): Promise<any> {
+    return await this.db.getDashboardStats();
+  }
+
+  /**
+   * Get recent risk assessments
+   */
+  async getRecentRiskAssessments(limit: number = 50): Promise<RiskAssessment[]> {
+    return await this.db.getRiskAssessments(undefined, limit);
   }
 }
 

@@ -175,7 +175,7 @@ async function runIntegrationTests() {
       success: true
     });
     
-    const profile = detector.getUserProfileData('profile_user');
+    const profile = await detector.getUserProfileData('profile_user');
     
     if (profile && profile.userId === 'profile_user' && profile.loginHistory.length === 1) {
       console.log('✓ User profile retrieval successful');

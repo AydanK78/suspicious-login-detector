@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import { SuspiciousLoginDetector } from '../core/detector';
 import { LoginAttempt, DetectorConfig } from '../types';
+import { getDatabase } from '../database/database';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -8,8 +9,9 @@ const port = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 
-// Initialize detector
+// Initialize detector and database
 const detector = new SuspiciousLoginDetector();
+const db = getDatabase();
 
 /**
  * Health check endpoint
@@ -84,10 +86,10 @@ app.post('/api/login/batch', async (req: Request, res: Response) => {
  * GET /api/user/:userId/history
  * Get login history for a user
  */
-app.get('/api/user/:userId/history', (req: Request, res: Response) => {
+app.get('/api/user/:userId/history', async (req: Request, res: Response) => {
   try {
     const userId = req.params.userId;
-    const profile = detector.getUserProfileData(userId);
+    const profile = await detector.getUserProfileData(userId);
 
     if (!profile) {
       return res.status(404).json({
@@ -114,10 +116,10 @@ app.get('/api/user/:userId/history', (req: Request, res: Response) => {
  * GET /api/user/:userId/risk-profile
  * Get risk profile summary for a user
  */
-app.get('/api/user/:userId/risk-profile', (req: Request, res: Response) => {
+app.get('/api/user/:userId/risk-profile', async (req: Request, res: Response) => {
   try {
     const userId = req.params.userId;
-    const profile = detector.getUserProfileData(userId);
+    const profile = await detector.getUserProfileData(userId);
 
     if (!profile) {
       return res.status(404).json({
@@ -144,16 +146,27 @@ app.get('/api/user/:userId/risk-profile', (req: Request, res: Response) => {
  * GET /api/stats
  * Get overall statistics
  */
-app.get('/api/stats', (req: Request, res: Response) => {
+app.get('/api/stats', async (req: Request, res: Response) => {
   try {
-    // This would need to be implemented with proper data storage
-    // For now, return a placeholder
-    res.json({
-      message: 'Statistics endpoint',
-      note: 'Implement data storage for comprehensive statistics'
-    });
+    const stats = await detector.getDashboardStats();
+    res.json(stats);
   } catch (error) {
     console.error('Error fetching stats:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+/**
+ * GET /api/risk-assessments
+ * Get recent risk assessments
+ */
+app.get('/api/risk-assessments', async (req: Request, res: Response) => {
+  try {
+    const limit = parseInt(req.query.limit as string) || 50;
+    const assessments = await detector.getRecentRiskAssessments(limit);
+    res.json({ assessments, total: assessments.length });
+  } catch (error) {
+    console.error('Error fetching risk assessments:', error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });

@@ -41,3 +41,8 @@ output/
 !sample-data/*.json
 !sample-data/*.csv
 
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
